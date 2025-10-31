@@ -1,9 +1,11 @@
 {
-    "log_rate": 3.0,
-    "alpha": 2.35,
+    "log_rate": 5.0,
+    "alpha_m": 2.35,
     "beta": 1.0,
     "mmin": 5.0,
     "mmax": 50.0,
     "loc": 0.0,
-    "scale": 0.1
+    "scale": 0.1,
+    "low": 0.0,
+    "high": 1.0
 }
