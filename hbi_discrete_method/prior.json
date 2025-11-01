@@ -1,10 +1,30 @@
 {
-    "log_rate": { "dist": "Uniform", "low": -6.0, "high": 10.0 },
-    "alpha_m": { "dist": "Uniform", "low": -4.0, "high": 12.0 },
-    "beta": { "dist": "Uniform", "low": -2.0, "high": 7.0 },
-    "mmin": { "dist": "Uniform", "low": 1.0, "high": 10.0 },
-    "mmax": { "dist": "Uniform", "low": 30.0, "high": 80.0 },
-    "scale": { "dist": "Uniform", "low": 0.0, "high": 4.0 },
-	"loc": 0.0,
-	"low": 0.0
+    "log_rate_0": {
+        "dist": "Uniform",
+        "low": -6.0,
+        "high": 10.0
+    },
+    "alpha_pl_0": {
+        "dist": "Uniform",
+        "low": -4.0,
+        "high": 12.0
+    },
+    "beta_pl_0": 0.0,
+    "mmin_pl_0": {
+        "dist": "Uniform",
+        "low": 1.0,
+        "high": 10.0
+    },
+    "mmax_pl_0": {
+        "dist": "Uniform",
+        "low": 30.0,
+        "high": 80.0
+    },
+    "eccentricity_scale_pl_0": {
+        "dist": "Uniform",
+        "low": 0.0,
+        "high": 4.0
+    },
+    "eccentricity_loc_pl_0": 0.0,
+    "eccentricity_low_pl_0": 0.0
 }

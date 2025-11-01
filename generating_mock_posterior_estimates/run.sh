@@ -1,9 +1,10 @@
 #!/bin/bash
 
-genie_ecc_matters \
-    --error-size 2000 \
-    --num-realizations 1 \
-    --seed $RANDOM \
-    --model-json model.json \
-    --pmean-json pmean.json \
-    --err-json err.json
+genie_n_pls_m_gs \
+	--seed $RANDOM \
+	--error-size 10000 \
+	--num-realizations 1 \
+	--seed $RANDOM \
+	--model-json model.json \
+	--pmean-json pmean.json \
+	--err-json err.json
