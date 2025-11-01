@@ -1,0 +1,27 @@
+{
+    "data_dump": {
+        "n_samples": 5000
+    },
+    "RQSpline_MALA_Bundle": {
+        "chain_batch_size": 0,
+        "n_chains": 100,
+        "batch_size": 10000,
+        "n_epochs": 5,
+        "n_max_examples": 200000,
+        "history_window": 1500,
+        "n_NFproposal_batch_size": 20,
+        "n_global_steps": 100,
+        "n_local_steps": 200,
+        "n_production_loops": 20,
+        "n_training_loops": 16,
+        "global_thinning": 4,
+        "local_thinning": 4,
+        "mala_step_size": 0.008,
+        "rq_spline_hidden_units": [64, 64],
+        "rq_spline_n_bins": 10,
+        "rq_spline_n_layers": 8,
+        "rq_spline_range": [-10.0, 10.0],
+        "learning_rate": 0.001,
+        "verbose": false
+    }
+}
