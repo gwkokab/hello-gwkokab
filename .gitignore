@@ -1,3 +1,5 @@
 *.hdf5
 logs
 *.dat
+posterior_summary.json
+*.zip
