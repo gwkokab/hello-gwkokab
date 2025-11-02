@@ -1,12 +1,12 @@
 {
     "kernel": {
-        "max_tree_depth": 7
+        "max_tree_depth": 10
     },
     "mcmc": {
-        "num_warmup": 2000,
+        "num_warmup": 3000,
         "num_samples": 1000,
-        "num_chains": 5,
-        "thinning": 1,
+        "num_chains": 10,
+        "thinning": 2,
         "chain_method": "parallel",
         "progress_bar": true,
         "jit_model_args": true

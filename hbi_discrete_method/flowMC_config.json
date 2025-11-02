@@ -1,22 +1,25 @@
 {
     "data_dump": {
-        "n_samples": 5000
+        "n_samples": 10000
     },
-    "RQSpline_MALA_Bundle": {
+    "bundle_config": {
+		"local_sampler_name": "hmc",
         "chain_batch_size": 0,
         "n_chains": 100,
         "batch_size": 10000,
-        "n_epochs": 5,
+        "n_epochs": 4,
         "n_max_examples": 200000,
-        "history_window": 1500,
-        "n_NFproposal_batch_size": 20,
+        "history_window": 2000,
+        "n_NFproposal_batch_size": 50,
         "n_global_steps": 100,
-        "n_local_steps": 200,
-        "n_production_loops": 20,
-        "n_training_loops": 16,
+        "n_local_steps": 100,
+        "n_production_loops": 10,
+        "n_training_loops": 10,
         "global_thinning": 4,
         "local_thinning": 4,
-        "mala_step_size": 0.008,
+        "step_size": 0.01,
+		"condition_matrix": 1.0,
+		"n_leapfrog": 5,
         "rq_spline_hidden_units": [
             64,
             64

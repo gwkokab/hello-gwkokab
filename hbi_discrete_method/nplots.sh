@@ -3,9 +3,9 @@
 dir=figs_numpyro
 mkdir $dir
 
-labels="\$\alpha_m\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$ \$\sigma_\epsilon\$"
+labels="\$\alpha_m\$ \$\sigma_\epsilon\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$"
 
-truths="-1 4.605170186 50.0 10.0 0.05"
+truths="-1 0.15 4.605170186 50.0 10.0"
 
 gwk_corner_plot \
 	--data "./inference/samples.dat" \
@@ -15,7 +15,6 @@ gwk_corner_plot \
 	--show-titles \
 	--truths $truths \
 	--labels $labels \
-	--use-latex
 
 gwk_chain_plot \
 	--data "./inference/chain_*.dat" \

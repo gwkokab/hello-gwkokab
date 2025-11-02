@@ -3,9 +3,9 @@
 dir=figs_flowMC
 mkdir $dir
 
-labels="\$\alpha_m\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$ \$\sigma_\epsilon\$"
+labels="\$\alpha_m\$ \$\sigma_\epsilon\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$"
 
-truths="-1 4.605170186 50.0 10.0 0.15"
+truths="-1 0.15 4.605170186 50.0 10.0"
 
 gwk_corner_plot \
 	--data "./inference/nf_samples_unweighted.dat" \
@@ -14,12 +14,7 @@ gwk_corner_plot \
 	--scale 1.5 \
 	--show-titles \
 	--truths $truths \
-	--labels $labels \
-	--range -4.5 1.5 \
-	--range 4.0 5.6 \
-	--range 47.0 55.0 \
-	--range 0.0 11.0 \
-	--range 0.1 0.18
+	--labels $labels
 
 gwk_chain_plot \
 	--data "./inference/*_accs.dat" \
@@ -87,12 +82,14 @@ gwk_chain_plot \
 gwk_r_hat_plot \
 	--chains-regex "./inference/prod_chains_*.dat" \
 	--output $dir/r_hat_prod.png \
-	--labels $labels
+	--labels $labels \
+	--n-split 20
 
 gwk_r_hat_plot \
 	--chains-regex "./inference/train_chains_*.dat" \
 	--output $dir/r_hat_train.png \
-	--labels $labels
+	--labels $labels \
+	--n-split 20
 
 gwk_ess_plot \
 	--train-chain-regex "./inference/train_chains_*.dat" \
@@ -105,9 +102,11 @@ gwk_ess_plot \
 gwk_ess_evolution_plot \
 	--chains-regex "./inference/prod_chains_*.dat" \
 	--output $dir/ess_evolution_prod.png \
-	--labels $labels
+	--labels $labels \
+	--n-split 20
 
 gwk_ess_evolution_plot \
 	--chains-regex "./inference/train_chains_*.dat" \
 	--output $dir/ess_evolution_train.png \
-	--labels $labels
+	--labels $labels \
+	--n-split 20
