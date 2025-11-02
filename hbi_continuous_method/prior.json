@@ -1,0 +1,27 @@
+{
+    "log_rate_0": {
+        "dist": "Uniform",
+        "low": -11.5,
+        "high": 11.5
+    },
+    "alpha_pl_0": {
+        "dist": "Uniform",
+        "low": -5.0,
+        "high": 5.0
+    },
+    "beta_pl_0": {
+        "dist": "Uniform",
+        "low": -5.0,
+        "high": 5.0
+    },
+    "mmin_pl_0": {
+        "dist": "Uniform",
+        "low": 1.0,
+        "high": 20.0
+    },
+    "mmax_pl_0": {
+        "dist": "Uniform",
+        "low": 30.0,
+        "high": 100.0
+    }
+}

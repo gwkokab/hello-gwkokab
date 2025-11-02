@@ -1,0 +1,30 @@
+{
+    "data_dump": {
+        "n_samples": 10000
+    },
+    "bundle_config": {
+        "chain_batch_size": 0,
+        "n_chains": 100,
+        "batch_size": 10000,
+        "n_epochs": 4,
+        "n_max_examples": 200000,
+        "history_window": 2000,
+        "n_NFproposal_batch_size": 50,
+        "n_global_steps": 100,
+        "n_local_steps": 100,
+        "n_production_loops": 10,
+        "n_training_loops": 10,
+        "global_thinning": 4,
+        "local_thinning": 4,
+        "local_sampler_name": "hmc",
+        "step_size": 0.01,
+        "condition_matrix": 1.0,
+        "n_leapfrog": 5,
+        "rq_spline_hidden_units": [64, 64],
+        "rq_spline_n_bins": 10,
+        "rq_spline_n_layers": 8,
+        "rq_spline_range": [-10.0, 10.0],
+        "learning_rate": 0.001,
+        "verbose": false
+    }
+}
