@@ -3,9 +3,9 @@
 dir=figs_flowMC
 mkdir $dir
 
-labels="\$\alpha_m\$ \$\sigma_\epsilon\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$"
+labels="\$\alpha\$ \$\beta\$ \$\ln{\mathcal{R}}\$ \$m_{\mathrm{max}}\$ \$m_{\mathrm{min}}\$"
 
-truths="-1 0.15 4.605170186 50.0 10.0"
+truths="-1.0 0.0 4.605170186 50.0 10.0"
 
 gwk_corner_plot \
 	--data "./inference/nf_samples_unweighted.dat" \

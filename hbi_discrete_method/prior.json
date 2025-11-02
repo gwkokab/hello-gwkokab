@@ -9,7 +9,11 @@
         "low": -5.0,
         "high": 5.0
     },
-    "beta_pl_0": 0.0,
+    "beta_pl_0": {
+        "dist": "Uniform",
+        "low": -5.0,
+        "high": 5.0
+    },
     "mmin_pl_0": {
         "dist": "Uniform",
         "low": 1.0,
@@ -19,12 +23,5 @@
         "dist": "Uniform",
         "low": 30.0,
         "high": 100.0
-    },
-    "eccentricity_scale_pl_0": {
-        "dist": "Uniform",
-        "low": 0.0,
-        "high": 0.5
-    },
-    "eccentricity_loc_pl_0": 0.0,
-    "eccentricity_low_pl_0": 0.0
+    }
 }

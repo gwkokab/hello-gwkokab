@@ -5,9 +5,5 @@
     "alpha_pl_0": -1.0,
     "beta_pl_0": 0.0,
     "mmin_pl_0": 10.0,
-    "mmax_pl_0": 50.0,
-    "eccentricity_loc_pl_0": 0.0,
-    "eccentricity_scale_pl_0": 0.15,
-    "eccentricity_low_pl_0": 0.0,
-    "eccentricity_high_pl_0": 1.0
+    "mmax_pl_0": 50.0
 }

@@ -3,7 +3,7 @@
         "n_samples": 10000
     },
     "bundle_config": {
-		"local_sampler_name": "hmc",
+        "local_sampler_name": "hmc",
         "chain_batch_size": 0,
         "n_chains": 100,
         "batch_size": 10000,
@@ -18,8 +18,8 @@
         "global_thinning": 4,
         "local_thinning": 4,
         "step_size": 0.01,
-		"condition_matrix": 1.0,
-		"n_leapfrog": 5,
+        "condition_matrix": 1.0,
+        "n_leapfrog": 5,
         "rq_spline_hidden_units": [
             64,
             64
