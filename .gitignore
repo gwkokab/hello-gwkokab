@@ -5,3 +5,4 @@ posterior_summary.json
 *.zip
 nf_samples_mapping.json
 constants.json
+*.out
