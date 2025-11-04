@@ -1,4 +1,7 @@
 {
-    "scale_Mc": 1.0,
-    "scale_eta": 1.0
+    "scale_Mc": 0.5,
+    "scale_eta": 0.5,
+    "eccentricity_low": 0.0,
+    "eccentricity_high": 1.0,
+    "eccentricity_scale": 0.05
 }

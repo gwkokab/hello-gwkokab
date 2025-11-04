@@ -1,9 +1,13 @@
 {
     "N_pl": 1,
     "N_g": 0,
-    "log_rate_0": 4.6,
-    "alpha_pl_0": -1.0,
+    "log_rate_0": 5.0,
+    "alpha_pl_0": 2.0,
     "beta_pl_0": 0.0,
     "mmin_pl_0": 10.0,
-    "mmax_pl_0": 50.0
+    "mmax_pl_0": 50.0,
+    "eccentricity_low_(g|pl)_[0-9]+": 0.0,
+    "eccentricity_high_(g|pl)_[0-9]+": 1.0,
+    "eccentricity_loc_pl_0": 0.0,
+    "eccentricity_scale_pl_0": 0.15
 }
