@@ -1,12 +1,18 @@
 #!/bin/bash
 
-f_sage_n_pls_m_gs \
-	--seed 37 \
+export JAX_COMPILATION_CACHE_DIR="$HOME/jax_cache"
+export NPROC=4
+export OPENBLAS_NUM_THREADS=1
+GPU=0,1
+CPU_MASK="31-59"
+
+GWKOKAB_LOG_FILE="flowMC_example.log" CUDA_VISIBLE_DEVICES=$GPU taskset -c "${CPU_MASK}" time f_sage_n_pls_m_gs \
+	--seed $RANDOM \
 	--n-pl 1 \
 	--n-g 0 \
 	--posterior-regex "../generating_mock_posterior_estimates/data/realization_0/posteriors/event_*.dat" \
-	--posterior-columns mass_1_source mass_2_source \
-	--pmean-json pmean.json \
+	--posterior-columns mass_1_source mass_2_source eccentricity \
 	--prior-json prior.json \
 	--sampler-config flowMC_config.json \
-	--n-buckets 10
+	--n-buckets 10 \
+	--add-truncated-normal-eccentricity
