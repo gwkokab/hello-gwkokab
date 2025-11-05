@@ -23,5 +23,17 @@
         "dist": "Uniform",
         "low": 30.0,
         "high": 100.0
-    }
+    },
+    "eccentricity_loc_(pl|g)_0": {
+        "dist": "Uniform",
+        "high": 1.0,
+        "low": 0.0
+    },
+    "eccentricity_scale_(pl|g)_[0-9]": {
+        "dist": "Uniform",
+        "high": 1.0,
+        "low": 0.0
+    },
+    "eccentricity_high_(pl|g)_0": 1.0,
+    "eccentricity_low_(pl|g)_0": 0.0
 }
