@@ -1,12 +1,10 @@
 #!/bin/bash
 
-export JAX_COMPILATION_CACHE_DIR="$HOME/jax_cache"
-export NPROC=4
-export OPENBLAS_NUM_THREADS=1
-GPU=0,1
+source ../env.sh 
+
 CPU_MASK="31-59"
 
-GWKOKAB_LOG_FILE="flowMC_example.log" CUDA_VISIBLE_DEVICES=$GPU taskset -c "${CPU_MASK}" time f_sage_n_pls_m_gs \
+GWKOKAB_LOG_FILE="flowMC_example.log" taskset -c "${CPU_MASK}" time f_sage_n_pls_m_gs \
 	--seed $RANDOM \
 	--n-pl 1 \
 	--n-g 0 \
@@ -14,5 +12,5 @@ GWKOKAB_LOG_FILE="flowMC_example.log" CUDA_VISIBLE_DEVICES=$GPU taskset -c "${CP
 	--posterior-columns mass_1_source mass_2_source eccentricity \
 	--prior-json prior.json \
 	--sampler-config flowMC_config.json \
-	--n-buckets 10 \
+	--n-buckets 5 \
 	--add-truncated-normal-eccentricity
